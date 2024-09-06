@@ -1,0 +1,52 @@
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseCard from "../components/BaseCard.astro";
+import Collapse from "../components/blog/collapse.astro";
+import Diff from "../components/blog/diff.astro";
+import Error from "../components/blog/error.astro";
+import Info from "../components/blog/info.astro";
+import Kbd from "../components/blog/kbd.astro";
+import Success from "../components/blog/success.astro";
+import Warning from "../components/blog/warning.astro";
+import TimeLine from "../components/page/TimeLine.astro";
+import LinkCard from "../components/page/LinkCard.astro";
+
+<BaseLayout title="Home">
+  <BaseCard title="Home">
+    <div class="flex">
+      <div class="p-6">
+          # Hi there! 👋
+
+          This is the Liang-37
+
+          This is my personal blog site
+      </div>
+    </div>
+
+  </BaseCard>
+
+  <BaseCard title="Home" image="/index.webp">
+# Home
+
+## 一位计算机小白，就读于广西大学
+
+# Content
+    <div class="grid grid-cols-2 gap-4">
+        <LinkCard
+          title="博客"
+          desc="学习笔记"
+        />
+        <LinkCard
+          title="项目"
+          desc="实践中"
+        />
+        <LinkCard
+          title="关于"
+          desc="我是谁，我要干什么"
+        />
+        <LinkCard
+          title="朋友"
+          desc="我有朋友吗"
+        />
+    </div>
+  </BaseCard>
+</BaseLayout>
